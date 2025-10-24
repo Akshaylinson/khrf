@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kerala Hydro Research Foundation | Advanced Hydroponics</title>
+    <title>Kerala Hydro Research Foundation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -229,14 +229,14 @@
             transition: all 1s ease;
             position: relative;
             height: 450px;
-            width: 200px;
+            width: 300px;
             margin: 0 auto;
         }
         .pot {
-            width: 70px;
-            height: 60px;
-            background: linear-gradient(to bottom, #ffffff, #A0522D);
-            border-radius: 10px 10px 0 0;
+            width: 220px;
+            height: 65px;
+            background: linear-gradient(to bottom, #ffffff, #ffffff);
+            border-radius: 0px 0px 10px 10px;
             position: absolute;
             bottom: 0;
             left: 50%;
@@ -245,9 +245,9 @@
             z-index: 2;
         }
         .pot-top {
-            width: 40px;
+            width: 100px;
             height: 10px;
-            background: #A0522D;
+            background: #ffffff;
             border-radius: 50%;
             position: absolute;
             top: -10px;
@@ -257,7 +257,7 @@
         .soil {
             width: 100%;
             height: 10px;
-            background: #8B4513;
+            background: #ffffff;
             position: absolute;
             bottom: 0;
             border-radius: 0 0 10px 10px;
@@ -265,11 +265,43 @@
         .plant {
             position: absolute;
             bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
             transition: all 1s ease;
             z-index: 1;
         }
+
+        /* Individual plant positions + custom heights */
+        .plant-1 {
+            left: 25%;
+            transform: translateX(-50%);
+            height: 80px; /* shorter */
+        }
+
+        .plant-2 {
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100px; /* medium */
+        }
+
+        .plant-3 {
+            left: 75%;
+            transform: translateX(-50%);
+            height: 120px; /* taller */
+        }
+
+        .plant-4 {
+            left: 40%;
+            transform: translateX(-50%);
+            bottom: 35px;
+            height: 90px;
+        }
+
+        .plant-5 {
+            left: 65%;
+            transform: translateX(-50%);
+            bottom: 35px;
+            height: 110px;
+        }
+
         .seed {
             width: 15px;
             height: 15px;
@@ -309,7 +341,7 @@
         }
         .stem {
             width: 8px;
-            height: 150px;
+            height: 120px;
             background: #339d5f;
             border-radius: 4px;
             position: absolute;
@@ -324,39 +356,165 @@
             border-radius: 50%;
             position: absolute;
         }
-        .leaf-1 {
+        
+        .plant-1 .leaf-1 {
             top: 25px;
             left: 5px;
             transform: rotate(-25deg);
         }
-        .leaf-2 {
+        .plant-1 .leaf-2 {
             top: 22px;
             right: 5px;
             transform: rotate(25deg);
         }
-        .leaf-3 {
+        .plant-1 .leaf-3 {
             top: 50px;
             left: 0px;
             transform: rotate(-15deg);
         }
-        .leaf-4 {
+        .plant-1 .leaf-4 {
             top: 47px;
             right: 0px;
             transform: rotate(15deg);
         }
-        .leaf-5 {
+        .plant-1 .leaf-5 {
             top: 75px;
             left: 6px;
             transform: rotate(-10deg);
         }
-        .leaf-6 {
+        .plant-1 .leaf-6 {
             top: 72px;
             right: 6px;
             transform: rotate(10deg);
         }
+        
+        .plant-2 .leaf-1 {
+            top: 30px;
+            left: 5px;
+            transform: rotate(-20deg);
+        }
+        .plant-2 .leaf-2 {
+            top: 27px;
+            right: 5px;
+            transform: rotate(20deg);
+        }
+        .plant-2 .leaf-3 {
+            top: 55px;
+            left: 0px;
+            transform: rotate(-10deg);
+        }
+        .plant-2 .leaf-4 {
+            top: 52px;
+            right: 0px;
+            transform: rotate(10deg);
+        }
+        .plant-2 .leaf-5 {
+            top: 80px;
+            left: 6px;
+            transform: rotate(-5deg);
+        }
+        .plant-2 .leaf-6 {
+            top: 77px;
+            right: 6px;
+            transform: rotate(5deg);
+        }
+        
+        .plant-3 .leaf-1 {
+            top: 20px;
+            left: 5px;
+            transform: rotate(-30deg);
+        }
+        .plant-3 .leaf-2 {
+            top: 17px;
+            right: 5px;
+            transform: rotate(30deg);
+        }
+        .plant-3 .leaf-3 {
+            top: 45px;
+            left: 0px;
+            transform: rotate(-20deg);
+        }
+        .plant-3 .leaf-4 {
+            top: 42px;
+            right: 0px;
+            transform: rotate(20deg);
+        }
+        .plant-3 .leaf-5 {
+            top: 70px;
+            left: 6px;
+            transform: rotate(-15deg);
+        }
+        .plant-3 .leaf-6 {
+            top: 67px;
+            right: 6px;
+            transform: rotate(15deg);
+        }
+        
+        .plant-4 .leaf-1 {
+            top: 35px;
+            left: 5px;
+            transform: rotate(-15deg);
+        }
+        .plant-4 .leaf-2 {
+            top: 32px;
+            right: 5px;
+            transform: rotate(15deg);
+        }
+        .plant-4 .leaf-3 {
+            top: 60px;
+            left: 0px;
+            transform: rotate(-5deg);
+        }
+        .plant-4 .leaf-4 {
+            top: 57px;
+            right: 0px;
+            transform: rotate(5deg);
+        }
+        .plant-4 .leaf-5 {
+            top: 85px;
+            left: 6px;
+            transform: rotate(0deg);
+        }
+        .plant-4 .leaf-6 {
+            top: 82px;
+            right: 6px;
+            transform: rotate(0deg);
+        }
+
+        .plant-5 .leaf-1 {
+            top: 35px;
+            left: 5px;
+            transform: rotate(-15deg);
+        }
+        .plant-5 .leaf-2 {
+            top: 32px;
+            right: 5px;
+            transform: rotate(15deg);
+        }
+        .plant-5 .leaf-3 {
+            top: 60px;
+            left: 0px;
+            transform: rotate(-5deg);
+        }
+        .plant-5 .leaf-4 {
+            top: 57px;
+            right: 0px;
+            transform: rotate(5deg);
+        }
+        .plant-5 .leaf-5 {
+            top: 85px;
+            left: 6px;
+            transform: rotate(0deg);
+        }
+        .plant-5 .leaf-6 {
+            top: 82px;
+            right: 6px;
+            transform: rotate(0deg);
+        }
+        
         .flower {
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
             background: #FFD700;
             border-radius: 50%;
             position: absolute;
@@ -368,24 +526,38 @@
             align-items: center;
         }
         .flower-center {
-            width: 11px;
-            height: 11px;
+            width: 13px;
+            height: 13px;
             background: #FF6347;
             border-radius: 50%;
         }
         .fruit {
-            width: 50px;
-            height: 30px;
-            background: #FF6347;
+            width: 40px;
+            height: 40px;
+            background: #ff9900;
             border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
             position: absolute;
             top: -20px;
-            left: 50%;
+            left: 80%;
             transform: translateX(-50%);
         }
+
+        /* Add the black dot inside the fruit */
+        .fruit::after {
+            content: "";
+            width: 1.5px;      /* w-1 → roughly 5px */
+            height: 3px;     /* h-1 → roughly 5px */
+            background: rgb(231, 225, 225);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;        /* Center vertically */
+            left: 55%;       /* Center horizontally */
+            transform: translate(-50%, -50%);
+        }
+
         .fruit-stem {
-            width: 2px;
-            height: 8px;
+            width: 3px;
+            height: 40px;
             background: #8B4513;
             position: absolute;
             top: -8px;
@@ -438,6 +610,55 @@
         }
         .growth-stage.active {
             display: block;
+        }
+        
+        /* New styles for enhanced features */
+        .parameter-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .parameter-optimal {
+            background-color: #10b981;
+        }
+        .parameter-warning {
+            background-color: #f59e0b;
+        }
+        .parameter-danger {
+            background-color: #ef4444;
+        }
+        .solution-save {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        .solution-save:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        .saved-solution {
+            background: rgba(51, 157, 95, 0.1);
+            border: 1px solid rgba(51, 157, 95, 0.3);
+            transition: all 0.3s ease;
+        }
+        .saved-solution:hover {
+            background: rgba(51, 157, 95, 0.2);
+        }
+        .nutrient-bar {
+            height: 8px;
+            border-radius: 4px;
+            margin-top: 4px;
+        }
+        .nutrient-nitrogen {
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+        }
+        .nutrient-phosphorus {
+            background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+        }
+        .nutrient-potassium {
+            background: linear-gradient(90deg, #f59e0b, #fbbf24);
         }
         
         /* Mobile Menu Styles */
@@ -535,6 +756,14 @@
             outline: 2px solid #339d5f;
             outline-offset: 2px;
         }
+
+        /* Hide mobile menu toggle on desktop */
+        @media (min-width: 1024px) {
+            #mobile-menu-toggle {
+                display: none !important;
+            }
+        }
+        
     </style>
 </head>
 <body class="font-primary bg-dark-950 text-white">
@@ -543,8 +772,11 @@
         <div class="container mx-auto px-4 sm:px-6 py-4">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2">
-                    <div class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center">
-                        <i class="fas fa-leaf text-white"></i>
+                    <div class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center overflow-hidden">
+                        <!-- Replace with your company logo -->
+                        <img src="logo.png" alt="KHRF Logo" class="w-full h-full object-cover">
+                        <!-- Fallback icon if logo doesn't load -->
+                        <i class="fas fa-leaf text-white absolute" style="display: none;"></i>
                     </div>
                     <div>
                         <h1 class="text-xl font-secondary font-bold">KHRF</h1>
@@ -552,24 +784,22 @@
                     </div>
                 </div>
                 
-                <nav class="hidden md:flex space-x-8">
+                <nav class="hidden lg:flex space-x-8">
                     <a href="#" class="nav-link">Home</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#technologies" class="nav-link">Technologies</a>
-                    <a href="#research" class="nav-link">Research</a>
                     <a href="#dashboard" class="nav-link">Dashboard</a>
-                    <a href="#calculator" class="nav-link">Calculator</a>
-                    <a href="#impact" class="nav-link">Impact</a>
+                    <a href="#calculator" class="nav-link">Simulator</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </nav>
                 
-                <div class="hidden md:block">
+                <div class="hidden lg:block">
                     <button class="bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-lg transition duration-300 transition-enhanced">
-                        Get In Touch
+                        Join Us
                     </button>
                 </div>
                 
-                <button id="mobile-menu-toggle" class="md:hidden text-xl focus:outline-none">
+                <button id="mobile-menu-toggle" class="lg:hidden text-xl focus:outline-none">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -581,10 +811,8 @@
                 <a href="#" class="mobile-nav-link">Home</a>
                 <a href="#about" class="mobile-nav-link">About</a>
                 <a href="#technologies" class="mobile-nav-link">Technologies</a>
-                <a href="#research" class="mobile-nav-link">Research</a>
                 <a href="#dashboard" class="mobile-nav-link">Dashboard</a>
-                <a href="#calculator" class="mobile-nav-link">Calculator</a>
-                <a href="#impact" class="mobile-nav-link">Impact</a>
+                <a href="#calculator" class="mobile-nav-link">Simulator</a>
                 <a href="#contact" class="mobile-nav-link">Contact</a>
                 <div class="pt-4">
                     <button class="w-full bg-primary-500 hover:bg-primary-600 px-4 py-3 rounded-lg transition duration-300 transition-enhanced">
@@ -890,105 +1118,6 @@
         </div>
     </section>
 
-    <!-- Research Section -->
-    <section id="research" class="py-16 sm:py-20 gradient-bg">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16 animate-fade-in">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-secondary font-bold mb-4">Research & Development</h2>
-                <div class="w-24 h-1 bg-primary-500 mx-auto mb-6"></div>
-                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-                    Our ongoing research projects focus on pushing the boundaries of hydroponic technology and sustainable agriculture.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-                <div>
-                    <h3 class="text-xl sm:text-2xl font-secondary font-bold mb-6">Current Research Initiatives</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="glass-effect rounded-xl p-6">
-                            <div class="flex items-start">
-                                <div class="w-10 h-10 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 mt-1">
-                                    <i class="fas fa-dna text-primary-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg sm:text-xl font-secondary font-bold mb-2">Crop Optimization</h4>
-                                    <p class="text-gray-300">
-                                        Developing plant varieties specifically optimized for hydroponic environments to maximize yield and nutritional value.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="glass-effect rounded-xl p-6">
-                            <div class="flex items-start">
-                                <div class="w-10 h-10 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 mt-1">
-                                    <i class="fas fa-robot text-primary-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg sm:text-xl font-secondary font-bold mb-2">Automation Systems</h4>
-                                    <p class="text-gray-300">
-                                        Creating fully automated hydroponic farms with robotic planting, maintenance, and harvesting capabilities.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="glass-effect rounded-xl p-6">
-                            <div class="flex items-start">
-                                <div class="w-10 h-10 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 mt-1">
-                                    <i class="fas fa-water text-primary-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg sm:text-xl font-secondary font-bold mb-2">Nutrient Formulations</h4>
-                                    <p class="text-gray-300">
-                                        Researching advanced nutrient solutions that enhance plant growth while reducing environmental impact.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="glass-effect rounded-2xl p-6 sm:p-8">
-                    <h3 class="text-xl sm:text-2xl font-secondary font-bold mb-6">Research Impact</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 sm:mr-6">
-                                <span class="text-xl sm:text-2xl font-bold text-primary-400">85%</span>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-secondary font-bold">Water Savings</h4>
-                                <p class="text-gray-300">Compared to traditional agriculture</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 sm:mr-6">
-                                <span class="text-xl sm:text-2xl font-bold text-primary-400">3x</span>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-secondary font-bold">Yield Increase</h4>
-                                <p class="text-gray-300">With optimized hydroponic systems</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center">
-                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 sm:mr-6">
-                                <span class="text-xl sm:text-2xl font-bold text-primary-400">0%</span>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-secondary font-bold">Chemical Runoff</h4>
-                                <p class="text-gray-300">With closed-loop systems</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Dashboard Section -->
     <section id="dashboard" class="py-16 sm:py-20 bg-dark-900">
         <div class="container mx-auto px-4 sm:px-6">
@@ -1130,6 +1259,105 @@
         </div>
     </section>
 
+    <!-- Research Section -->
+    <section id="research" class="py-16 sm:py-20 gradient-bg">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16 animate-fade-in">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-secondary font-bold mb-4">Research & Development</h2>
+                <div class="w-24 h-1 bg-primary-500 mx-auto mb-6"></div>
+                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+                    Our ongoing research projects focus on pushing the boundaries of hydroponic technology and sustainable agriculture.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-secondary font-bold mb-6">Current Research Initiatives</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="glass-effect rounded-xl p-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-dna text-primary-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg sm:text-xl font-secondary font-bold mb-2">Crop Optimization</h4>
+                                    <p class="text-gray-300">
+                                        Developing plant varieties specifically optimized for hydroponic environments to maximize yield and nutritional value.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-effect rounded-xl p-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-robot text-primary-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg sm:text-xl font-secondary font-bold mb-2">Automation Systems</h4>
+                                    <p class="text-gray-300">
+                                        Creating fully automated hydroponic farms with robotic planting, maintenance, and harvesting capabilities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-effect rounded-xl p-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-water text-primary-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg sm:text-xl font-secondary font-bold mb-2">Nutrient Formulations</h4>
+                                    <p class="text-gray-300">
+                                        Researching advanced nutrient solutions that enhance plant growth while reducing environmental impact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-effect rounded-2xl p-6 sm:p-8">
+                    <h3 class="text-xl sm:text-2xl font-secondary font-bold mb-6">Research Impact</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 sm:mr-6">
+                                <span class="text-xl sm:text-2xl font-bold text-primary-400">85%</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-secondary font-bold">Water Savings</h4>
+                                <p class="text-gray-300">Compared to traditional agriculture</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 sm:mr-6">
+                                <span class="text-xl sm:text-2xl font-bold text-primary-400">3x</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-secondary font-bold">Yield Increase</h4>
+                                <p class="text-gray-300">With optimized hydroponic systems</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary-500/20 flex items-center justify-center mr-4 sm:mr-6">
+                                <span class="text-xl sm:text-2xl font-bold text-primary-400">0%</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-secondary font-bold">Chemical Runoff</h4>
+                                <p class="text-gray-300">With closed-loop systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Calculator Section -->
     <section id="calculator" class="py-16 sm:py-20 gradient-bg">
         <div class="container mx-auto px-4 sm:px-6">
@@ -1141,7 +1369,7 @@
                 </p>
             </div>
             
-            <div class="glass-effect rounded-2xl p-4 sm:p-6 lg:p-8 max-w-4xl mx-auto">
+            <div class="glass-effect rounded-2xl p-4 sm:p-6 lg:p-8 max-w-5xl mx-auto">
                 <!-- Step 1: Parameter Setup -->
                 <div id="step-1" class="calculator-step active">
                     <div class="flex flex-wrap justify-between items-center mb-6 sm:mb-8">
@@ -1159,7 +1387,10 @@
                             <div class="dashboard-card glass-effect rounded-xl p-4 sm:p-6">
                                 <div class="flex justify-between items-center mb-4">
                                     <h4 class="font-secondary font-bold text-lg">pH Level</h4>
-                                    <span id="ph-value" class="text-xl sm:text-2xl font-bold">6.2</span>
+                                    <div class="flex items-center">
+                                        <span id="ph-indicator" class="parameter-indicator parameter-optimal"></span>
+                                        <span id="ph-value" class="text-xl sm:text-2xl font-bold">6.2</span>
+                                    </div>
                                 </div>
                                 <input type="range" min="4" max="9" step="0.1" value="6.2" class="slider mb-2" id="ph-slider">
                                 <div class="flex justify-between text-xs text-gray-400 mb-2">
@@ -1179,7 +1410,10 @@
                             <div class="dashboard-card glass-effect rounded-xl p-4 sm:p-6">
                                 <div class="flex justify-between items-center mb-4">
                                     <h4 class="font-secondary font-bold text-lg">EC Level (mS/cm)</h4>
-                                    <span id="ec-value" class="text-xl sm:text-2xl font-bold">1.8</span>
+                                    <div class="flex items-center">
+                                        <span id="ec-indicator" class="parameter-indicator parameter-optimal"></span>
+                                        <span id="ec-value" class="text-xl sm:text-2xl font-bold">1.8</span>
+                                    </div>
                                 </div>
                                 <input type="range" min="0" max="4" step="0.1" value="1.8" class="slider mb-2" id="ec-slider">
                                 <div class="flex justify-between text-xs text-gray-400 mb-2">
@@ -1194,6 +1428,37 @@
                                 </div>
                                 <p id="ec-status" class="text-primary-400 text-sm mt-2">Optimal for vegetative growth</p>
                             </div>
+                            
+                            <!-- Nutrient Ratios -->
+                            <div class="dashboard-card glass-effect rounded-xl p-4 sm:p-6">
+                                <h4 class="font-secondary font-bold text-lg mb-4">Nutrient Ratios (N-P-K)</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-300">Nitrogen (N)</span>
+                                            <span id="nitrogen-value" class="font-medium">150 ppm</span>
+                                        </div>
+                                        <input type="range" min="50" max="300" step="5" value="150" class="slider mb-2" id="nitrogen-slider">
+                                        <div class="nutrient-bar nutrient-nitrogen" style="width: 50%"></div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-300">Phosphorus (P)</span>
+                                            <span id="phosphorus-value" class="font-medium">50 ppm</span>
+                                        </div>
+                                        <input type="range" min="10" max="150" step="5" value="50" class="slider mb-2" id="phosphorus-slider">
+                                        <div class="nutrient-bar nutrient-phosphorus" style="width: 33%"></div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-300">Potassium (K)</span>
+                                            <span id="potassium-value" class="font-medium">200 ppm</span>
+                                        </div>
+                                        <input type="range" min="50" max="400" step="5" value="200" class="slider mb-2" id="potassium-slider">
+                                        <div class="nutrient-bar nutrient-potassium" style="width: 57%"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="space-y-6 sm:space-y-8">
@@ -1201,7 +1466,10 @@
                             <div class="dashboard-card glass-effect rounded-xl p-4 sm:p-6">
                                 <div class="flex justify-between items-center mb-4">
                                     <h4 class="font-secondary font-bold text-lg">Water Temperature (°C)</h4>
-                                    <span id="temp-value" class="text-xl sm:text-2xl font-bold">22</span>
+                                    <div class="flex items-center">
+                                        <span id="temp-indicator" class="parameter-indicator parameter-optimal"></span>
+                                        <span id="temp-value" class="text-xl sm:text-2xl font-bold">22</span>
+                                    </div>
                                 </div>
                                 <input type="range" min="10" max="35" step="0.5" value="22" class="slider mb-2" id="temp-slider">
                                 <div class="flex justify-between text-xs text-gray-400 mb-2">
@@ -1221,7 +1489,10 @@
                             <div class="dashboard-card glass-effect rounded-xl p-4 sm:p-6">
                                 <div class="flex justify-between items-center mb-4">
                                     <h4 class="font-secondary font-bold text-lg">Dissolved Oxygen (mg/L)</h4>
-                                    <span id="oxygen-value" class="text-xl sm:text-2xl font-bold">6.5</span>
+                                    <div class="flex items-center">
+                                        <span id="oxygen-indicator" class="parameter-indicator parameter-optimal"></span>
+                                        <span id="oxygen-value" class="text-xl sm:text-2xl font-bold">6.5</span>
+                                    </div>
                                 </div>
                                 <input type="range" min="0" max="12" step="0.1" value="6.5" class="slider mb-2" id="oxygen-slider">
                                 <div class="flex justify-between text-xs text-gray-400 mb-2">
@@ -1235,6 +1506,24 @@
                                     <span>8</span>
                                 </div>
                                 <p id="oxygen-status" class="text-primary-400 text-sm mt-2">Optimal for root respiration</p>
+                            </div>
+                            
+                            <!-- Solution Management -->
+                            <div class="dashboard-card glass-effect rounded-xl p-4 sm:p-6">
+                                <h4 class="font-secondary font-bold text-lg mb-4">Solution Management</h4>
+                                <div class="space-y-4">
+                                    <div class="flex space-x-4">
+                                        <button id="save-solution" class="flex-1 solution-save rounded-lg p-3 text-center">
+                                            <i class="fas fa-save mr-2"></i> Save Solution
+                                        </button>
+                                        <button id="load-solution" class="flex-1 solution-save rounded-lg p-3 text-center">
+                                            <i class="fas fa-folder-open mr-2"></i> Load Solution
+                                        </button>
+                                    </div>
+                                    <div id="saved-solutions" class="max-h-40 overflow-y-auto space-y-2 hidden">
+                                        <!-- Saved solutions will appear here -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1305,6 +1594,18 @@
                                         <span>Dissolved Oxygen</span>
                                         <span id="final-oxygen" class="font-medium">6.5 mg/L (Optimal)</span>
                                     </div>
+                                    <div class="flex justify-between">
+                                        <span>Nitrogen (N)</span>
+                                        <span id="final-nitrogen" class="font-medium">30 ppm</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Phosphorus (P)</span>
+                                        <span id="final-phosphorus" class="font-medium">10 ppm</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Potassium (K)</span>
+                                        <span id="final-potassium" class="font-medium">40 ppm</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1357,30 +1658,30 @@
                                 <div class="space-y-4">
                                     <div>
                                         <label class="block text-gray-300 mb-2">Plant Type</label>
-                                        <select class="w-full bg-dark-800 border border-dark-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500">
-                                            <option>Lettuce</option>
-                                            <option>Tomato</option>
-                                            <option>Basil</option>
-                                            <option>Spinach</option>
-                                            <option>Kale</option>
+                                        <select id="plant-type" class="w-full bg-dark-800 border border-dark-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500">
+                                            <option value="lettuce">Lettuce</option>
+                                            <option value="tomato">Tomato</option>
+                                            <option value="basil">Basil</option>
+                                            <option value="spinach">Spinach</option>
+                                            <option value="kale">Kale</option>
                                         </select>
                                     </div>
                                     <div>
                                         <label class="block text-gray-300 mb-2">Growth Stage</label>
-                                        <select class="w-full bg-dark-800 border border-dark-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500">
-                                            <option>Seedling</option>
-                                            <option>Vegetative</option>
-                                            <option>Flowering</option>
-                                            <option>Fruiting</option>
+                                        <select id="growth-stage" class="w-full bg-dark-800 border border-dark-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500">
+                                            <option value="seedling">Seedling</option>
+                                            <option value="vegetative">Vegetative</option>
+                                            <option value="flowering">Flowering</option>
+                                            <option value="fruiting">Fruiting</option>
                                         </select>
                                     </div>
                                     <div>
                                         <label class="block text-gray-300 mb-2">Test Duration</label>
-                                        <select class="w-full bg-dark-800 border border-dark-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500">
-                                            <option>7 days</option>
-                                            <option>14 days</option>
-                                            <option>21 days</option>
-                                            <option>30 days</option>
+                                        <select id="test-duration" class="w-full bg-dark-800 border border-dark-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500">
+                                            <option value="7">7 days</option>
+                                            <option value="14">14 days</option>
+                                            <option value="21">21 days</option>
+                                            <option value="30">30 days</option>
                                         </select>
                                     </div>
                                 </div>
@@ -1406,6 +1707,10 @@
                                         <span>Leaf Color</span>
                                         <span id="leaf-color" class="font-medium"></span>
                                     </div>
+                                    <div class="flex justify-between">
+                                        <span>Yield Potential</span>
+                                        <span id="yield-potential" class="font-medium"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1418,61 +1723,12 @@
                                     <div class="soil"></div>
                                 </div>
                                 
-                                <!-- Seed Stage -->
-                                <div id="growth-stage-seed" class="growth-stage active">
-                                    <div class="seed"></div>
-                                </div>
-                                
-                                <!-- Sprout Stage -->
-                                <div id="growth-stage-sprout" class="growth-stage">
-                                    <div class="sprout">
-                                        <div class="sprout-leaf sprout-leaf-1"></div>
-                                        <div class="sprout-leaf sprout-leaf-2"></div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Vegetative Stage -->
-                                <div id="growth-stage-vegetative" class="growth-stage">
-                                    <div class="stem">
-                                        <div class="leaf leaf-1"></div>
-                                        <div class="leaf leaf-2"></div>
-                                        <div class="leaf leaf-3"></div>
-                                        <div class="leaf leaf-4"></div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Flowering Stage -->
-                                <div id="growth-stage-flowering" class="growth-stage">
-                                    <div class="stem">
-                                        <div class="leaf leaf-1"></div>
-                                        <div class="leaf leaf-2"></div>
-                                        <div class="leaf leaf-3"></div>
-                                        <div class="leaf leaf-4"></div>
-                                        <div class="leaf leaf-5"></div>
-                                        <div class="leaf leaf-6"></div>
-                                        <div class="flower">
-                                            <div class="flower-center"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Fruiting Stage -->
-                                <div id="growth-stage-fruiting" class="growth-stage">
-                                    <div class="stem">
-                                        <div class="leaf leaf-1"></div>
-                                        <div class="leaf leaf-2"></div>
-                                        <div class="leaf leaf-3"></div>
-                                        <div class="leaf leaf-4"></div>
-                                        <div class="leaf leaf-5"></div>
-                                        <div class="leaf leaf-6"></div>
-                                        <div class="fruit-stem"></div>
-                                        <div class="fruit"></div>
-                                    </div>
-                                </div>
+                                <!-- Plants will be dynamically generated here -->
+                                <div id="plants-container"></div>
                             </div>
                             
                             <div class="text-center mb-6">
-                                <p class="text-gray-300 mb-4">Apply your solution to test plant</p>
+                                <p class="text-gray-300 mb-4">Apply your solution to test plants</p>
                                 <button id="start-test" class="bg-primary-500 hover:bg-primary-600 px-6 py-3 rounded-lg font-medium transition duration-300 mb-4 transition-enhanced">
                                     <i class="fas fa-flask mr-2"></i> Start Test
                                 </button>
@@ -1656,8 +1912,9 @@
                         <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
                         <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
                         <li><a href="#technologies" class="text-gray-400 hover:text-white transition duration-300">Technologies</a></li>
-                        <li><a href="#research" class="text-gray-400 hover:text-white transition duration-300">Research</a></li>
-                        <li><a href="#calculator" class="text-gray-400 hover:text-white transition duration-300">Calculator</a></li>
+                        <li><a href="#dashboard" class="text-gray-400 hover:text-white transition duration-300">Dashboard</a></li>
+                        <li><a href="#calculator" class="text-gray-400 hover:text-white transition duration-300">Simulator</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
                     </ul>
                 </div>
                 
@@ -1703,13 +1960,14 @@
         const mobileMenu = document.getElementById('mobile-menu');
         const menuOverlay = document.getElementById('menu-overlay');
         const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-        
+
         function toggleMobileMenu() {
             mobileMenu.classList.toggle('active');
             menuOverlay.classList.toggle('active');
             document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
         }
-        
+
+        // Add event listeners for mobile menu
         mobileMenuToggle.addEventListener('click', toggleMobileMenu);
         menuOverlay.addEventListener('click', toggleMobileMenu);
         
@@ -1901,21 +2159,66 @@
         // Initialize dashboard on page load
         initializeDashboard();
 
-        // Simulator functionality
+        // Enhanced Simulator functionality
         // Optimal ranges for parameters
         const optimalRanges = {
             ph: { min: 5.5, max: 6.5 },
             ec: { min: 1.2, max: 2.5 },
             temp: { min: 18, max: 24 },
-            oxygen: { min: 5, max: 8 }
+            oxygen: { min: 5, max: 8 },
+            nitrogen: { min: 100, max: 200 },
+            phosphorus: { min: 30, max: 80 },
+            potassium: { min: 150, max: 300 }
         };
 
-        // Get DOM elements
+        // Plant-specific requirements
+        const plantRequirements = {
+            lettuce: {
+                ph: { min: 5.5, max: 6.5 },
+                ec: { min: 1.2, max: 1.8 },
+                nitrogen: { min: 120, max: 180 },
+                phosphorus: { min: 40, max: 60 },
+                potassium: { min: 160, max: 240 }
+            },
+            tomato: {
+                ph: { min: 5.5, max: 6.8 },
+                ec: { min: 2.0, max: 3.5 },
+                nitrogen: { min: 150, max: 250 },
+                phosphorus: { min: 50, max: 90 },
+                potassium: { min: 200, max: 350 }
+            },
+            basil: {
+                ph: { min: 5.5, max: 6.5 },
+                ec: { min: 1.0, max: 1.8 },
+                nitrogen: { min: 100, max: 180 },
+                phosphorus: { min: 30, max: 60 },
+                potassium: { min: 150, max: 250 }
+            },
+            spinach: {
+                ph: { min: 6.0, max: 7.0 },
+                ec: { min: 1.8, max: 2.3 },
+                nitrogen: { min: 140, max: 200 },
+                phosphorus: { min: 40, max: 70 },
+                potassium: { min: 180, max: 280 }
+            },
+            kale: {
+                ph: { min: 5.5, max: 6.5 },
+                ec: { min: 1.8, max: 2.5 },
+                nitrogen: { min: 150, max: 220 },
+                phosphorus: { min: 45, max: 75 },
+                potassium: { min: 190, max: 300 }
+            }
+        };
+
+        // Get DOM elements for simulator
         const phSlider = document.getElementById('ph-slider');
         const ecSlider = document.getElementById('ec-slider');
         const tempSlider = document.getElementById('temp-slider');
         const oxygenSlider = document.getElementById('oxygen-slider');
         const ratioSlider = document.getElementById('ratio-slider');
+        const nitrogenSlider = document.getElementById('nitrogen-slider');
+        const phosphorusSlider = document.getElementById('phosphorus-slider');
+        const potassiumSlider = document.getElementById('potassium-slider');
         
         const phValue = document.getElementById('ph-value');
         const ecValue = document.getElementById('ec-value');
@@ -1924,16 +2227,27 @@
         const ratioValue = document.getElementById('ratio-value');
         const waterAmount = document.getElementById('water-amount');
         const solutionAmount = document.getElementById('solution-amount');
+        const nitrogenValue = document.getElementById('nitrogen-value');
+        const phosphorusValue = document.getElementById('phosphorus-value');
+        const potassiumValue = document.getElementById('potassium-value');
         
         const phStatus = document.getElementById('ph-status');
         const ecStatus = document.getElementById('ec-status');
         const tempStatus = document.getElementById('temp-status');
         const oxygenStatus = document.getElementById('oxygen-status');
         
+        const phIndicator = document.getElementById('ph-indicator');
+        const ecIndicator = document.getElementById('ec-indicator');
+        const tempIndicator = document.getElementById('temp-indicator');
+        const oxygenIndicator = document.getElementById('oxygen-indicator');
+        
         const finalPh = document.getElementById('final-ph');
         const finalEc = document.getElementById('final-ec');
         const finalTemp = document.getElementById('final-temp');
         const finalOxygen = document.getElementById('final-oxygen');
+        const finalNitrogen = document.getElementById('final-nitrogen');
+        const finalPhosphorus = document.getElementById('final-phosphorus');
+        const finalPotassium = document.getElementById('final-potassium');
         
         const chemicalLiquid = document.getElementById('chemical-liquid');
         const mixingStatus = document.getElementById('mixing-status');
@@ -1945,21 +2259,26 @@
         const growthRate = document.getElementById('growth-rate');
         const rootDev = document.getElementById('root-dev');
         const leafColor = document.getElementById('leaf-color');
+        const yieldPotential = document.getElementById('yield-potential');
         
-        // Growth stage elements
-        const growthStages = {
-            seed: document.getElementById('growth-stage-seed'),
-            sprout: document.getElementById('growth-stage-sprout'),
-            vegetative: document.getElementById('growth-stage-vegetative'),
-            flowering: document.getElementById('growth-stage-flowering'),
-            fruiting: document.getElementById('growth-stage-fruiting')
-        };
+        const plantType = document.getElementById('plant-type');
+        const growthStage = document.getElementById('growth-stage');
+        const testDuration = document.getElementById('test-duration');
+        
+        const saveSolutionBtn = document.getElementById('save-solution');
+        const loadSolutionBtn = document.getElementById('load-solution');
+        const savedSolutionsContainer = document.getElementById('saved-solutions');
+        const plantsContainer = document.getElementById('plants-container');
         
         // Step navigation
         const step1 = document.getElementById('step-1');
         const step2 = document.getElementById('step-2');
         const step3 = document.getElementById('step-3');
         
+        // Initialize saved solutions from localStorage
+        let savedSolutions = JSON.parse(localStorage.getItem('hydroponicSolutions')) || [];
+        
+        // Event listeners for navigation
         document.getElementById('next-to-mix').addEventListener('click', () => {
             step1.classList.remove('active');
             step2.classList.add('active');
@@ -1974,6 +2293,7 @@
         document.getElementById('next-to-test').addEventListener('click', () => {
             step2.classList.remove('active');
             step3.classList.add('active');
+            generatePlants();
         });
         
         document.getElementById('back-to-mix').addEventListener('click', () => {
@@ -1982,7 +2302,7 @@
         });
         
         document.getElementById('restart-test').addEventListener('click', () => {
-            // Reset plant to seed stage
+            // Reset all plants to seed stage
             resetPlantGrowth();
             
             // Reset progress
@@ -1997,38 +2317,192 @@
             step1.classList.add('active');
         });
 
+        // Save solution functionality
+        saveSolutionBtn.addEventListener('click', () => {
+            const solutionName = prompt('Enter a name for this solution:');
+            if (solutionName) {
+                const solution = {
+                    name: solutionName,
+                    ph: parseFloat(phSlider.value),
+                    ec: parseFloat(ecSlider.value),
+                    temp: parseFloat(tempSlider.value),
+                    oxygen: parseFloat(oxygenSlider.value),
+                    nitrogen: parseInt(nitrogenSlider.value),
+                    phosphorus: parseInt(phosphorusSlider.value),
+                    potassium: parseInt(potassiumSlider.value),
+                    timestamp: new Date().toISOString()
+                };
+                
+                savedSolutions.push(solution);
+                localStorage.setItem('hydroponicSolutions', JSON.stringify(savedSolutions));
+                updateSavedSolutionsList();
+                showNotification('Solution saved successfully!', 'success');
+            }
+        });
+
+        // Load solution functionality
+        loadSolutionBtn.addEventListener('click', () => {
+            if (savedSolutions.length === 0) {
+                showNotification('No saved solutions found.', 'warning');
+                return;
+            }
+            
+            savedSolutionsContainer.classList.toggle('hidden');
+            updateSavedSolutionsList();
+        });
+
+        // Update saved solutions list
+        function updateSavedSolutionsList() {
+            savedSolutionsContainer.innerHTML = '';
+            
+            savedSolutions.forEach((solution, index) => {
+                const solutionElement = document.createElement('div');
+                solutionElement.className = 'saved-solution rounded-lg p-3 cursor-pointer';
+                solutionElement.innerHTML = `
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h5 class="font-medium">${solution.name}</h5>
+                            <p class="text-xs text-gray-400">${new Date(solution.timestamp).toLocaleDateString()}</p>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="load-solution-btn text-primary-400 hover:text-primary-300" data-index="${index}">
+                                <i class="fas fa-upload"></i>
+                            </button>
+                            <button class="delete-solution-btn text-red-400 hover:text-red-300" data-index="${index}">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                
+                savedSolutionsContainer.appendChild(solutionElement);
+            });
+            
+            // Add event listeners to load and delete buttons
+            document.querySelectorAll('.load-solution-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const index = parseInt(btn.getAttribute('data-index'));
+                    loadSolution(index);
+                    savedSolutionsContainer.classList.add('hidden');
+                });
+            });
+            
+            document.querySelectorAll('.delete-solution-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const index = parseInt(btn.getAttribute('data-index'));
+                    deleteSolution(index);
+                });
+            });
+        }
+
+        // Load a saved solution
+        function loadSolution(index) {
+            const solution = savedSolutions[index];
+            phSlider.value = solution.ph;
+            ecSlider.value = solution.ec;
+            tempSlider.value = solution.temp;
+            oxygenSlider.value = solution.oxygen;
+            nitrogenSlider.value = solution.nitrogen;
+            phosphorusSlider.value = solution.phosphorus;
+            potassiumSlider.value = solution.potassium;
+            
+            updateAllParameters();
+            showNotification('Solution loaded successfully!', 'success');
+        }
+
+        // Delete a saved solution
+        function deleteSolution(index) {
+            if (confirm('Are you sure you want to delete this solution?')) {
+                savedSolutions.splice(index, 1);
+                localStorage.setItem('hydroponicSolutions', JSON.stringify(savedSolutions));
+                updateSavedSolutionsList();
+                showNotification('Solution deleted successfully!', 'success');
+            }
+        }
+
+        // Show notification
+        function showNotification(message, type) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `fixed top-20 right-6 z-50 p-4 rounded-lg shadow-lg transition-all duration-300 ${
+                type === 'success' ? 'bg-green-500' : 'bg-yellow-500'
+            }`;
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <i class="fas fa-${type === 'success' ? 'check' : 'exclamation-triangle'} mr-2"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Remove notification after 3 seconds
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
         // Update parameter display and status
-        function updateParameter(slider, valueElement, statusElement, parameter) {
+        function updateParameter(slider, valueElement, statusElement, indicator, parameter) {
             const value = parseFloat(slider.value);
-            valueElement.textContent = parameter === 'temp' ? value : value.toFixed(parameter === 'ec' ? 1 : 1);
+            valueElement.textContent = parameter === 'temp' ? value : value.toFixed(parameter === 'ec' || parameter === 'ph' ? 1 : 0);
             
             const range = optimalRanges[parameter];
             let status = '';
             let statusClass = '';
+            let indicatorClass = '';
             
             if (value < range.min) {
                 status = 'Too Low';
                 statusClass = 'text-yellow-400';
+                indicatorClass = 'parameter-warning';
             } else if (value > range.max) {
                 status = 'Too High';
                 statusClass = 'text-yellow-400';
+                indicatorClass = 'parameter-warning';
             } else {
                 status = 'Optimal';
                 statusClass = 'text-primary-400';
+                indicatorClass = 'parameter-optimal';
+            }
+            
+            // For extreme values, show danger indicator
+            if ((parameter === 'ph' && (value < 4.5 || value > 8.5)) ||
+                (parameter === 'ec' && value < 0.5) ||
+                (parameter === 'temp' && (value < 12 || value > 32)) ||
+                (parameter === 'oxygen' && value < 3)) {
+                statusClass = 'text-red-400';
+                indicatorClass = 'parameter-danger';
             }
             
             statusElement.textContent = status;
             statusElement.className = `${statusClass} text-sm mt-2`;
+            indicator.className = `parameter-indicator ${indicatorClass}`;
             
             return { value, status, statusClass };
         }
 
         // Update all parameters and system status
         function updateAllParameters() {
-            const ph = updateParameter(phSlider, phValue, phStatus, 'ph');
-            const ec = updateParameter(ecSlider, ecValue, ecStatus, 'ec');
-            const temp = updateParameter(tempSlider, tempValue, tempStatus, 'temp');
-            const oxygen = updateParameter(oxygenSlider, oxygenValue, oxygenStatus, 'oxygen');
+            const ph = updateParameter(phSlider, phValue, phStatus, phIndicator, 'ph');
+            const ec = updateParameter(ecSlider, ecValue, ecStatus, ecIndicator, 'ec');
+            const temp = updateParameter(tempSlider, tempValue, tempStatus, tempIndicator, 'temp');
+            const oxygen = updateParameter(oxygenSlider, oxygenValue, oxygenStatus, oxygenIndicator, 'oxygen');
+            
+            // Update nutrient values
+            nitrogenValue.textContent = `${nitrogenSlider.value} ppm`;
+            phosphorusValue.textContent = `${phosphorusSlider.value} ppm`;
+            potassiumValue.textContent = `${potassiumSlider.value} ppm`;
+            
+            // Update nutrient bars
+            document.querySelector('.nutrient-nitrogen').style.width = `${(nitrogenSlider.value / 300) * 100}%`;
+            document.querySelector('.nutrient-phosphorus').style.width = `${(phosphorusSlider.value / 150) * 100}%`;
+            document.querySelector('.nutrient-potassium').style.width = `${(potassiumSlider.value / 400) * 100}%`;
             
             // Update final solution if we're on step 2
             if (step2.classList.contains('active')) {
@@ -2067,12 +2541,18 @@
             const ec = parseFloat(ecSlider.value) / ratio;
             const temp = parseFloat(tempSlider.value);
             const oxygen = parseFloat(oxygenSlider.value);
+            const nitrogen = parseInt(nitrogenSlider.value) / ratio;
+            const phosphorus = parseInt(phosphorusSlider.value) / ratio;
+            const potassium = parseInt(potassiumSlider.value) / ratio;
             
             // Update display
             finalPh.textContent = `${ph.toFixed(1)} (${getStatusText(ph, optimalRanges.ph)})`;
             finalEc.textContent = `${ec.toFixed(1)} mS/cm (${getStatusText(ec, optimalRanges.ec)})`;
             finalTemp.textContent = `${temp}°C (${getStatusText(temp, optimalRanges.temp)})`;
             finalOxygen.textContent = `${oxygen.toFixed(1)} mg/L (${getStatusText(oxygen, optimalRanges.oxygen)})`;
+            finalNitrogen.textContent = `${nitrogen.toFixed(0)} ppm`;
+            finalPhosphorus.textContent = `${phosphorus.toFixed(0)} ppm`;
+            finalPotassium.textContent = `${potassium.toFixed(0)} ppm`;
         }
 
         // Helper function to get status text
@@ -2115,6 +2595,84 @@
             }, 2000);
         });
 
+        // Generate plants based on selected plant type
+        function generatePlants() {
+            plantsContainer.innerHTML = '';
+            
+            // Create 5 plants with different positions and sizes
+            const plantPositions = [
+                { left: '25%', height: '80px', bottom: '30px' },
+                { left: '50%', height: '100px', bottom: '30px' },
+                { left: '75%', height: '120px', bottom: '30px' },
+                { left: '40%', height: '90px', bottom: '35px' },
+                { left: '65%', height: '110px', bottom: '35px' }
+            ];
+            
+            for (let i = 1; i <= 5; i++) {
+                const plant = document.createElement('div');
+                plant.className = `plant plant-${i}`;
+                plant.style.left = plantPositions[i-1].left;
+                plant.style.height = plantPositions[i-1].height;
+                plant.style.bottom = plantPositions[i-1].bottom;
+                
+                plant.innerHTML = `
+                    <!-- Seed Stage -->
+                    <div id="growth-stage-seed-${i}" class="growth-stage active">
+                        <div class="seed"></div>
+                    </div>
+                    
+                    <!-- Sprout Stage -->
+                    <div id="growth-stage-sprout-${i}" class="growth-stage">
+                        <div class="sprout">
+                            <div class="sprout-leaf sprout-leaf-1"></div>
+                            <div class="sprout-leaf sprout-leaf-2"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vegetative Stage -->
+                    <div id="growth-stage-vegetative-${i}" class="growth-stage">
+                        <div class="stem">
+                            <div class="leaf leaf-1"></div>
+                            <div class="leaf leaf-2"></div>
+                            <div class="leaf leaf-3"></div>
+                            <div class="leaf leaf-4"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Flowering Stage -->
+                    <div id="growth-stage-flowering-${i}" class="growth-stage">
+                        <div class="stem">
+                            <div class="leaf leaf-1"></div>
+                            <div class="leaf leaf-2"></div>
+                            <div class="leaf leaf-3"></div>
+                            <div class="leaf leaf-4"></div>
+                            <div class="leaf leaf-5"></div>
+                            <div class="leaf leaf-6"></div>
+                            <div class="flower">
+                                <div class="flower-center"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Fruiting Stage -->
+                    <div id="growth-stage-fruiting-${i}" class="growth-stage">
+                        <div class="stem">
+                            <div class="leaf leaf-1"></div>
+                            <div class="leaf leaf-2"></div>
+                            <div class="leaf leaf-3"></div>
+                            <div class="leaf leaf-4"></div>
+                            <div class="leaf leaf-5"></div>
+                            <div class="leaf leaf-6"></div>
+                            <div class="fruit-stem"></div>
+                            <div class="fruit"></div>
+                        </div>
+                    </div>
+                `;
+                
+                plantsContainer.appendChild(plant);
+            }
+        }
+
         // Start plant test
         document.getElementById('start-test').addEventListener('click', function() {
             const button = this;
@@ -2126,15 +2684,25 @@
             const ec = parseFloat(ecSlider.value) / ratio;
             const temp = parseFloat(tempSlider.value);
             const oxygen = parseFloat(oxygenSlider.value);
+            const nitrogen = parseInt(nitrogenSlider.value) / ratio;
+            const phosphorus = parseInt(phosphorusSlider.value) / ratio;
+            const potassium = parseInt(potassiumSlider.value) / ratio;
+            
+            // Get plant type and requirements
+            const selectedPlant = plantType.value;
+            const plantReq = plantRequirements[selectedPlant];
             
             // Calculate plant health score (0-100)
             let healthScore = 100;
             
-            // Penalize for parameters outside optimal range
-            if (ph < optimalRanges.ph.min || ph > optimalRanges.ph.max) healthScore -= 25;
-            if (ec < optimalRanges.ec.min || ec > optimalRanges.ec.max) healthScore -= 25;
-            if (temp < optimalRanges.temp.min || temp > optimalRanges.temp.max) healthScore -= 20;
-            if (oxygen < optimalRanges.oxygen.min || oxygen > optimalRanges.oxygen.max) healthScore -= 15;
+            // Penalize for parameters outside optimal range for the specific plant
+            if (ph < plantReq.ph.min || ph > plantReq.ph.max) healthScore -= 15;
+            if (ec < plantReq.ec.min || ec > plantReq.ec.max) healthScore -= 15;
+            if (temp < optimalRanges.temp.min || temp > optimalRanges.temp.max) healthScore -= 10;
+            if (oxygen < optimalRanges.oxygen.min || oxygen > optimalRanges.oxygen.max) healthScore -= 10;
+            if (nitrogen < plantReq.nitrogen.min || nitrogen > plantReq.nitrogen.max) healthScore -= 10;
+            if (phosphorus < plantReq.phosphorus.min || phosphorus > plantReq.phosphorus.max) healthScore -= 10;
+            if (potassium < plantReq.potassium.min || potassium > plantReq.potassium.max) healthScore -= 10;
             
             // Additional penalty for extreme values
             if (ph < 4.5 || ph > 8.5) healthScore -= 10;
@@ -2153,14 +2721,14 @@
                 progressFill.style.width = `${progress}%`;
                 progressText.textContent = `${progress}%`;
                 
-                // Update plant growth stage based on progress
+                // Update plant growth stage based on progress for all plants
                 updatePlantGrowth(progress, healthScore);
                 
                 if (progress >= 100) {
                     clearInterval(interval);
                     
                     // Show test result
-                    showTestResult(healthScore);
+                    showTestResult(healthScore, selectedPlant);
                     
                     // Re-enable button
                     button.disabled = false;
@@ -2168,111 +2736,152 @@
             }, 100);
         });
 
-        // Reset plant growth to seed stage
+        // Reset all plants growth to seed stage
         function resetPlantGrowth() {
-            // Hide all growth stages
-            Object.values(growthStages).forEach(stage => {
-                stage.classList.remove('active');
-            });
-            
-            // Show seed stage
-            growthStages.seed.classList.add('active');
-        }
-
-        // Update plant growth based on progress and health score
-        function updatePlantGrowth(progress, healthScore) {
-            // Determine which growth stage to show based on progress
-            if (progress < 20) {
-                // Seed stage
-                if (!growthStages.seed.classList.contains('active')) {
-                    Object.values(growthStages).forEach(stage => stage.classList.remove('active'));
-                    growthStages.seed.classList.add('active');
-                }
-            } else if (progress < 40) {
-                // Sprout stage
-                if (!growthStages.sprout.classList.contains('active')) {
-                    Object.values(growthStages).forEach(stage => stage.classList.remove('active'));
-                    growthStages.sprout.classList.add('active');
-                }
-            } else if (progress < 60) {
-                // Vegetative stage
-                if (!growthStages.vegetative.classList.contains('active')) {
-                    Object.values(growthStages).forEach(stage => stage.classList.remove('active'));
-                    growthStages.vegetative.classList.add('active');
-                }
-            } else if (progress < 80) {
-                // Flowering stage
-                if (!growthStages.flowering.classList.contains('active')) {
-                    Object.values(growthStages).forEach(stage => stage.classList.remove('active'));
-                    growthStages.flowering.classList.add('active');
-                }
-            } else {
-                // Fruiting stage
-                if (!growthStages.fruiting.classList.contains('active')) {
-                    Object.values(growthStages).forEach(stage => stage.classList.remove('active'));
-                    growthStages.fruiting.classList.add('active');
+            // Hide all growth stages for all plants
+            for (let i = 1; i <= 5; i++) {
+                const seedStage = document.getElementById(`growth-stage-seed-${i}`);
+                const sproutStage = document.getElementById(`growth-stage-sprout-${i}`);
+                const vegetativeStage = document.getElementById(`growth-stage-vegetative-${i}`);
+                const floweringStage = document.getElementById(`growth-stage-flowering-${i}`);
+                const fruitingStage = document.getElementById(`growth-stage-fruiting-${i}`);
+                
+                if (seedStage) seedStage.classList.remove('active');
+                if (sproutStage) sproutStage.classList.remove('active');
+                if (vegetativeStage) vegetativeStage.classList.remove('active');
+                if (floweringStage) floweringStage.classList.remove('active');
+                if (fruitingStage) fruitingStage.classList.remove('active');
+                
+                // Show seed stage for all plants
+                if (seedStage) seedStage.classList.add('active');
+                
+                // Remove health effects
+                const plantElement = document.querySelector(`.plant-${i}`);
+                if (plantElement) {
+                    plantElement.classList.remove('plant-healthy', 'plant-destroyed');
                 }
             }
-            
-            // Apply visual effects based on health score
-            if (healthScore < 40) {
-                // Poor health - apply damage effects
-                const currentStage = Object.values(growthStages).find(stage => stage.classList.contains('active'));
-                if (currentStage) {
-                    currentStage.classList.add('plant-destroyed');
-                    currentStage.classList.remove('plant-healthy');
+        }
+
+        // Update plant growth based on progress and health score for all plants
+        function updatePlantGrowth(progress, healthScore) {
+            // Update all plants simultaneously
+            for (let i = 1; i <= 5; i++) {
+                const seedStage = document.getElementById(`growth-stage-seed-${i}`);
+                const sproutStage = document.getElementById(`growth-stage-sprout-${i}`);
+                const vegetativeStage = document.getElementById(`growth-stage-vegetative-${i}`);
+                const floweringStage = document.getElementById(`growth-stage-flowering-${i}`);
+                const fruitingStage = document.getElementById(`growth-stage-fruiting-${i}`);
+                
+                if (!seedStage || !sproutStage || !vegetativeStage || !floweringStage || !fruitingStage) continue;
+                
+                // Determine which growth stage to show based on progress
+                // Adjust thresholds based on health score (healthier plants grow faster)
+                const adjustedProgress = progress * (0.5 + (healthScore / 100) * 0.5);
+                
+                if (adjustedProgress < 20) {
+                    // Seed stage
+                    if (!seedStage.classList.contains('active')) {
+                        seedStage.classList.add('active');
+                        sproutStage.classList.remove('active');
+                        vegetativeStage.classList.remove('active');
+                        floweringStage.classList.remove('active');
+                        fruitingStage.classList.remove('active');
+                    }
+                } else if (adjustedProgress < 40) {
+                    // Sprout stage
+                    if (!sproutStage.classList.contains('active')) {
+                        seedStage.classList.remove('active');
+                        sproutStage.classList.add('active');
+                        vegetativeStage.classList.remove('active');
+                        floweringStage.classList.remove('active');
+                        fruitingStage.classList.remove('active');
+                    }
+                } else if (adjustedProgress < 60) {
+                    // Vegetative stage
+                    if (!vegetativeStage.classList.contains('active')) {
+                        seedStage.classList.remove('active');
+                        sproutStage.classList.remove('active');
+                        vegetativeStage.classList.add('active');
+                        floweringStage.classList.remove('active');
+                        fruitingStage.classList.remove('active');
+                    }
+                } else if (adjustedProgress < 80) {
+                    // Flowering stage
+                    if (!floweringStage.classList.contains('active')) {
+                        seedStage.classList.remove('active');
+                        sproutStage.classList.remove('active');
+                        vegetativeStage.classList.remove('active');
+                        floweringStage.classList.add('active');
+                        fruitingStage.classList.remove('active');
+                    }
+                } else {
+                    // Fruiting stage
+                    if (!fruitingStage.classList.contains('active')) {
+                        seedStage.classList.remove('active');
+                        sproutStage.classList.remove('active');
+                        vegetativeStage.classList.remove('active');
+                        floweringStage.classList.remove('active');
+                        fruitingStage.classList.add('active');
+                    }
                 }
-            } else if (healthScore >= 80) {
-                // Excellent health - apply healthy effects
-                const currentStage = Object.values(growthStages).find(stage => stage.classList.contains('active'));
-                if (currentStage) {
-                    currentStage.classList.add('plant-healthy');
-                    currentStage.classList.remove('plant-destroyed');
-                }
-            } else {
-                // Moderate health - remove both effects
-                const currentStage = Object.values(growthStages).find(stage => stage.classList.contains('active'));
-                if (currentStage) {
-                    currentStage.classList.remove('plant-healthy', 'plant-destroyed');
+                
+                // Apply visual effects based on health score
+                const plantElement = document.querySelector(`.plant-${i}`);
+                if (healthScore < 40) {
+                    // Poor health - apply damage effects
+                    plantElement.classList.add('plant-destroyed');
+                    plantElement.classList.remove('plant-healthy');
+                } else if (healthScore >= 80) {
+                    // Excellent health - apply healthy effects
+                    plantElement.classList.add('plant-healthy');
+                    plantElement.classList.remove('plant-destroyed');
+                } else {
+                    // Moderate health - remove both effects
+                    plantElement.classList.remove('plant-healthy', 'plant-destroyed');
                 }
             }
         }
 
         // Show test result based on health score
-        function showTestResult(healthScore) {
+        function showTestResult(healthScore, plantType) {
             // Update result message and metrics based on health score
             if (healthScore >= 80) {
-                resultMessage.textContent = 'Excellent! Your solution promotes healthy plant growth.';
+                resultMessage.textContent = `Excellent! Your solution is ideal for ${plantType} growth.`;
                 resultMessage.className = 'text-lg font-medium mb-4 text-primary-400';
                 healthStatus.textContent = 'Excellent';
                 healthStatus.className = 'font-medium text-primary-400';
                 growthRate.textContent = 'Rapid';
                 rootDev.textContent = 'Strong';
                 leafColor.textContent = 'Vibrant Green';
+                yieldPotential.textContent = 'High';
             } else if (healthScore >= 60) {
-                resultMessage.textContent = 'Good! Your solution supports plant growth with minor issues.';
+                resultMessage.textContent = `Good! Your solution supports ${plantType} growth with minor issues.`;
                 resultMessage.className = 'text-lg font-medium mb-4 text-green-400';
                 healthStatus.textContent = 'Good';
                 healthStatus.className = 'font-medium text-green-400';
                 growthRate.textContent = 'Moderate';
                 rootDev.textContent = 'Healthy';
                 leafColor.textContent = 'Light Green';
+                yieldPotential.textContent = 'Medium';
             } else if (healthScore >= 40) {
-                resultMessage.textContent = 'Fair. Your solution has issues that may affect plant health.';
+                resultMessage.textContent = `Fair. Your solution has issues that may affect ${plantType} health.`;
                 resultMessage.className = 'text-lg font-medium mb-4 text-yellow-400';
                 healthStatus.textContent = 'Fair';
                 healthStatus.className = 'font-medium text-yellow-400';
                 growthRate.textContent = 'Slow';
                 rootDev.textContent = 'Weak';
                 leafColor.textContent = 'Pale Green';
+                yieldPotential.textContent = 'Low';
             } else {
-                resultMessage.textContent = 'Poor. Your solution may harm or kill plants.';
+                resultMessage.textContent = `Poor. Your solution may harm or kill ${plantType} plants.`;
                 resultMessage.className = 'text-lg font-medium mb-4 text-red-400';
                 healthStatus.textContent = 'Poor';
                 healthStatus.className = 'font-medium text-red-400';
                 growthRate.textContent = 'Stunted';
                 rootDev.textContent = 'Damaged';
                 leafColor.textContent = 'Yellow/Brown';
+                yieldPotential.textContent = 'Very Low';
             }
             
             // Show result with animation
@@ -2287,11 +2896,14 @@
         tempSlider.addEventListener('input', () => updateAllParameters());
         oxygenSlider.addEventListener('input', () => updateAllParameters());
         ratioSlider.addEventListener('input', () => updateRatio());
+        nitrogenSlider.addEventListener('input', () => updateAllParameters());
+        phosphorusSlider.addEventListener('input', () => updateAllParameters());
+        potassiumSlider.addEventListener('input', () => updateAllParameters());
 
         // Initialize the simulator
         updateAllParameters();
         updateRatio();
-        resetPlantGrowth();
+        generatePlants();
 
         // Counter animation for impact section
         function animateCounter(element) {
@@ -2369,6 +2981,3 @@
     </script>
 </body>
 </html>
-
-
-
